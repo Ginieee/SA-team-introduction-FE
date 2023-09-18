@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import EnabledButton from '../components/EnabledButton';
 import InputText from '../components/InputText';
 import { Member } from '../data/type';
