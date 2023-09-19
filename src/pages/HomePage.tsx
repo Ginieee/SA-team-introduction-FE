@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import EnabledButton from '../components/EnabledButton';
 import MemberBox from '../components/MemberBox';
 import { Member } from '../data/type';
-import { appContainer, content, emptyMsg, header, title, titleBar, titleDesc } from '../styles/common';
+import { appContainer, content, header, title, titleBar, titleDesc } from '../styles/common';
 import { memberBoxContainer } from '../styles/memberBox';
 
 const HomePage = () => {

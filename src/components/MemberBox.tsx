@@ -7,7 +7,7 @@ import { memberPosition, memberProfileImg, memberStyle } from '../styles/memberB
 const MemberBox = ({member, pos}:{member:Member, pos:number}) => {
   return (
     <div css={memberStyle}>
-      <img src={process.env.PUBLIC_URL + imgList[pos]} alt={`Image ${pos}`} css={memberProfileImg}/>
+      <img src={process.env.PUBLIC_URL + imgList[pos]} alt={`character ${pos}`} css={memberProfileImg}/>
       <div>
         <div>{member.studentId} {member.memberName}</div>
         <div css={memberPosition}>{member.position}</div>
