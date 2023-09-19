@@ -38,11 +38,11 @@ const HomePage = () => {
       <div css={content}>
         <div css={titleBar}>
           <div css={title}>Name</div>
-          <div css={titleDesc}>시아팀명</div>
+          <div css={titleDesc}>오아시스</div>
         </div>
         <div css={titleBar}>
           <div css={title}>Introduce</div>
-          <div css={titleDesc}>안녕하세요! 이번 시스템 아키텍쳐 수업에 참여하게 된 팀입니다.</div>
+          <div css={titleDesc}>안녕하세요! 이번 시스템 아키텍쳐 수업에 참여하게 된 팀 오아시스입니다.<br/>저희 팀은 오디오와 관련한 API를 이용하여 시스템 아키텍쳐 수업에서 텀 프로젝트를 진행하려고 합니다.</div>
         </div>
         <div css={titleBar}>
           <div css={title}>Members</div>
