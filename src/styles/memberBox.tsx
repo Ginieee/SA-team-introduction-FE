@@ -10,6 +10,7 @@ export const memberStyle = css`
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+  margin-right: 20px;
   /* border: 1px solid #A5A5A5;
   padding: 26px 20px;
   border-radius: 13px; */
@@ -23,7 +24,7 @@ export const memberProfileImg = css`
 `
 
 export const memberPosition = css`
-  color: #A5A5A5;
+  color: #FFFFFF;
   margin-top: 10px;
 `
 

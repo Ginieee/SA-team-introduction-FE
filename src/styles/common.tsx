@@ -5,11 +5,12 @@ export const appContainer = css`
   flex-direction: column;
   align-items: center;
   font-family: 'Pretendard';
-  color: #000000;
+  color: #FFFFFF;
   margin: auto auto;
   height: 100%;
   width: 100%;
   font-size: 16px;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,75,253,1) 100%);
 `
 
 export const header = css`

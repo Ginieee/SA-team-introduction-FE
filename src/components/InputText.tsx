@@ -20,6 +20,7 @@ const InputText = ({
     fontWeight: 400,
     color: '#000000',
     fontFamily: 'Pretendard',
+    backgroundColor: '#FFFFFF'
   };
 
   return (

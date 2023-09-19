@@ -50,12 +50,17 @@ const HomePage = () => {
         </div>
       </div>
       <div css={memberBoxContainer}>
-        {
+        {/* {
           members.length > 0 ? members.map((item,idx)=>(
             <MemberBox member={item} pos={idx}/>
           )) : <div css={emptyMsg}>아직 등록된 멤버가 없어요. 😥</div>
-        }
-        {/* <MemberBox member={testMember} pos={0}/> */}
+        } */}
+        <MemberBox member={testMember} pos={0}/>
+        <MemberBox member={testMember} pos={1}/>
+        <MemberBox member={testMember} pos={2}/>
+        <MemberBox member={testMember} pos={3}/>
+        <MemberBox member={testMember} pos={4}/>
+        <MemberBox member={testMember} pos={5}/>
       </div>
       <EnabledButton text='팀원 추가하기' onClick={()=>{navigate('/add')}}/>
     </div>
