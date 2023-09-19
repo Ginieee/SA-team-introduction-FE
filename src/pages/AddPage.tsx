@@ -37,7 +37,7 @@ const AddPage = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("http://localhost:8080/signup", member);
+      await axios.post("http://15.164.159.9:9000/signup", member);
       navigate("/");
     } catch (err) {
       console.log(err);

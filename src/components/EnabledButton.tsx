@@ -14,6 +14,7 @@ const enabledButton = {
   padding: '20px 50px',
   borderRadius: '6px',
   fontFamily: 'Pretendard',
+  display: 'flex'
 };
 
 const EnabledButton = ({

@@ -7,8 +7,10 @@ export const appContainer = css`
   font-family: 'Pretendard';
   color: #FFFFFF;
   margin: auto auto;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   width: 100%;
+  position: relative;
   font-size: 16px;
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,75,253,1) 100%);
 `

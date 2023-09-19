@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import EnabledButton from '../components/EnabledButton';
 import MemberBox from '../components/MemberBox';
 import { Member } from '../data/type';
-import { appContainer, content, header, title, titleBar, titleDesc } from '../styles/common';
+import { appContainer, content, header, title, titleBar, titleDesc, emptyMsg } from '../styles/common';
 import { memberBoxContainer } from '../styles/memberBox';
 
 const HomePage = () => {
@@ -20,9 +20,9 @@ const HomePage = () => {
   useEffect(()=>{
     const fetchAllMembers = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/members");
-        console.log("GET MEMBERS ==== ", res.data);
-        setMembers(res.data);
+        const res = await axios.get("http://15.164.159.9:9000/members");
+        console.log("GET MEMBERS ==== ", res.data.result);
+        setMembers(res.data.result);
       } catch (err) {
         console.log(err);
       }
@@ -50,17 +50,17 @@ const HomePage = () => {
         </div>
       </div>
       <div css={memberBoxContainer}>
-        {/* {
+        {
           members.length > 0 ? members.map((item,idx)=>(
             <MemberBox member={item} pos={idx}/>
           )) : <div css={emptyMsg}>아직 등록된 멤버가 없어요. 😥</div>
-        } */}
-        <MemberBox member={testMember} pos={0}/>
+        }
+        {/* <MemberBox member={testMember} pos={0}/>
         <MemberBox member={testMember} pos={1}/>
         <MemberBox member={testMember} pos={2}/>
         <MemberBox member={testMember} pos={3}/>
         <MemberBox member={testMember} pos={4}/>
-        <MemberBox member={testMember} pos={5}/>
+        <MemberBox member={testMember} pos={5}/> */}
       </div>
       <EnabledButton text='팀원 추가하기' onClick={()=>{navigate('/add')}}/>
     </div>
